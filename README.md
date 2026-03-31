@@ -5,22 +5,6 @@
 ![Project Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 ![Python Version](https://img.shields.io/badge/Python-3.8+-blue)
 ![Data Size](https://img.shields.io/badge/Dataset-10K%2B%20Records-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
-
----
-
-## 📋 Table of Contents
-
-- [Project Overview](#project-overview)
-- [Key Insights](#key-insights)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Quick Start](#quick-start)
-- [Files & Documentation](#files--documentation)
-- [Analysis Results](#analysis-results)
-- [Dashboard Design](#dashboard-design)
-- [How to Use](#how-to-use)
-- [Contributing](#contributing)
 
 ---
 
@@ -166,72 +150,6 @@ Business-Intelligence-Dashboard/
 └── .gitignore                                # Standard Python .gitignore
 ```
 
----
-
-## 🚀 Quick Start
-
-### Prerequisites
-- Python 3.8+
-- pip package manager
-- 50MB disk space
-
-### 1. Clone & Setup
-
-```bash
-# Clone repository
-git clone https://github.com/yourusername/BI-Dashboard.git
-cd BI-Dashboard
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r analysis/requirements.txt
-```
-
-### 2. Generate/Load Data
-
-```bash
-# Option A: Generate fresh synthetic data
-python data/synthetic_data_generator.py
-
-# Option B: Use existing data
-# (sales_data_raw.csv is already included)
-```
-
-### 3. Clean Data
-
-```bash
-python analysis/data_cleaning.py
-# Output: sales_data_cleaned.csv with 28 engineered features
-```
-
-### 4. Run EDA
-
-```bash
-python analysis/eda.py
-# Output: 12-panel visualization saved to visualizations/eda_comprehensive_analysis.png
-```
-
-### 5. Generate Forecasts
-
-```bash
-python analysis/forecasting.py
-# Output: 6-month forecast chart + model comparison metrics
-```
-
-### 6. Review Outputs
-
-```bash
-# Open generated files
-# - visualizations/eda_comprehensive_analysis.png (EDA dashboard)
-# - visualizations/forecast_models.png (Sales forecast)
-# - documentation/ceo_summary.md (Executive insights)
-```
-
----
-
 ## 📄 Files & Documentation
 
 ### Core Analysis Files
@@ -299,101 +217,6 @@ Final Clean Records:     10,000 (99.8% retention)
 
 ---
 
-## 📈 Dashboard Design
-
-Complete Power BI/Tableau dashboard specifications provided in `documentation/dashboard_design.md`
-
-### Dashboard Pages Included
-
-1. **Executive Summary** (Landing Page)
-   - 5 KPI tiles (Revenue, Profit, Margin, Growth, AOV)
-   - Revenue trend with forecast bands
-   - Regional performance radar
-   - Product category mix pie charts
-   - Top 5 products ranking
-
-2. **Sales Performance Deep Dive**
-   - Interactive regional tree map
-   - Customer segment analysis
-   - Discount impact matrix
-   - Monthly performance data table
-
-3. **Profit & Margin Analysis**
-   - Waterfall chart (Profit build-up)
-   - Category × Segment heatmap
-   - Top 10 products by margin
-   - 36-month margin trend
-
-4. **Forecasting & Predictions**
-   - Prophet vs ARIMA forecast comparison
-   - Category-level forecasts
-   - Regional forecast small multiples
-   - Model accuracy metrics
-
-5. **Interactive Detail Dashboards**
-   - Transaction-level drill-down
-   - Product master data view
-   - Regional summary tables
-
-### Design Specifications Included
-- ✅ Color palette (5 primary colors)
-- ✅ Typography (Headers, body, data)
-- ✅ Layout grid & proportions
-- ✅ Interactive element behaviors
-- ✅ Mobile responsive design
-- ✅ Accessibility guidelines
-- ✅ Row-level security (RLS) design
-- ✅ Refresh schedule & SLAs
-
-**Note**: This repo provides design specifications and prototype visualizations. Implementation in Power BI/Tableau requires those tools.
-
----
-
-## 🔧 How to Use
-
-### For Data Analysts
-```bash
-# Review cleaned data
-python -c "import pandas as pd; print(pd.read_csv('data/sales_data_cleaned.csv').describe())"
-
-# Run custom analysis
-python analysis/eda.py  # Generates 12 visualizations
-
-# Export data for Tableau
-python analysis/data_cleaning.py  # Creates analysis-ready CSV
-```
-
-### For SQL/Database Teams
-```sql
--- Load cleaned data into SQL Server
-COPY sales_cleaned FROM 'sales_data_cleaned.csv' WITH (FORMAT CSV, HEADER);
-
--- Run analysis
-@sql/advanced_queries.sql
--- Create views for BI tool
-```
-
-### For BI Developers
-```
-1. Review specifications in documentation/dashboard_design.md
-2. Reference Power BI/Tableau color palette & layouts
-3. Connect data source (CSV or SQL Server)
-4. Build dashboards following design specifications
-5. Implement row-level security per RLS design
-6. Configure refresh schedule (hourly for details, weekly for forecasts)
-```
-
-### For Business Stakeholders
-```
-1. Read documentation/ceo_summary.md for insights & recommendations
-2. Review forecast & model comparison charts
-3. Discuss implementation of 5 strategic recommendations
-4. Schedule executive briefing on dashboard
-5. Establish KPI targets for 2025
-```
-
----
-
 ## 📚 Database Implementation
 
 All SQL scripts are production-ready for SQL Server, PostgreSQL, or MySQL:
@@ -411,38 +234,6 @@ SELECT Region, SUM(Sales) as Revenue, AVG(Profit) as Avg_Profit, ...
 FROM sales_cleaned
 GROUP BY Region;
 ```
-
----
-
-## 🎓 Learning Outcomes
-
-By studying this project, you'll learn:
-
-- **Data Engineering**: Generation, cleaning, validation of large datasets
-- **SQL**: Window functions, CTEs, aggregations, performance optimization
-- **Python/Pandas**: Data manipulation, feature engineering, exploratory analysis
-- **Data Visualization**: Effective chart selection, multi-panel dashboards, storytelling
-- **Time Series Forecasting**: Prophet & ARIMA methods,  model evaluation (MAPE, RMSE)
-- **Business Intelligence**: Dashboard design, KPI definition, executive communication
-- **Statistical Analysis**: Correlation, regression, hypothesis testing, A/B testing
-- **Project Management**: End-to-end analytics workflow from data to recommendations
-
----
-
-## 📊 Screenshots
-
-### EDA Visualization Dashboard
-![EDA Dashboard](https://via.placeholder.com/800x600.png?text=12-Panel+EDA+Visualization)
-*12 charts covering revenue trends, regional performance, product analysis, forecasts*
-
-### Time Series Forecast Models
-![Forecast Comparison](https://via.placeholder.com/800x400.png?text=Prophet+vs+ARIMA+Forecast)
-*Prophet (15% MAPE) vs ARIMA (3.37% MAPE) - 6 month sales projection*
-
-### Executive Dashboard Mockup
-![Dashboard Mockup](https://via.placeholder.com/1200x900.png?text=Power+BI+Dashboard+Design)
-*5-page Power BI/Tableau design showing KPIs, trends, forecasts, drill-downs*
-
 ---
 
 ## 📋 Methodology
