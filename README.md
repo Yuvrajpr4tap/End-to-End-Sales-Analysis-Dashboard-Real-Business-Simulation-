@@ -473,38 +473,6 @@ By studying this project, you'll learn:
 
 ---
 
-## 🤝 Contributing
-
-Contributions welcome! Areas for enhancement:
-
-- [ ] Add interactive Streamlit dashboard
-- [ ] Implement Terraform/Docker for easy deployment
-- [ ] Create Power BI .pbix file (requires Power BI Desktop)
-- [ ] Add Tableau .twb template
-- [ ] Expand forecasting to category-level predictions
-- [ ] Create scheduling/automation scripts (dbt, Airflow)
-- [ ] Add A/B testing framework for recommendations
-- [ ] Multilingual support for executive summaries
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
-
----
-
-## ✉️ Questions & Support
-
-- **Issues**: Open a GitHub issue for bugs or questions
-- **Questions**: Check [FAQ.md](FAQ.md) first
-- **Business Inquiry**: See RECOMMENDATIONS.md for implementation support
-- **Data Download**: All included; no external API required
-
----
-
 ## 🙏 Acknowledgments
 
 - Prophet documentation (Facebook Research)
@@ -527,35 +495,6 @@ Business Impact:      $1.2M
 Time to ROI:          6 months
 ```
 
----
-
-## 🗺️ Roadmap
-
-### Phase 1: Complete ✅
-- [x] Synthetic data generation
-- [x] Data cleaning pipeline
-- [x] EDA & visualizations
-- [x] Time series forecasting
-- [x] Dashboard design specs
-- [x] Executive recommendations
-
-### Phase 2: Next (Optional)
-- [ ] Power BI .pbix deployment
-- [ ] Tableau dashboard template
-- [ ] Streamlit interactive app
-- [ ] ML model for customer lifetime value
-- [ ] Recommendation engine
-
-### Phase 3: Advanced (Optional)
-- [ ] Automated reporting pipeline (daily email)
-- [ ] Real-time data ingestion
-- [ ] Causal inference analysis
-- [ ] Scenario planning tools
-- [ ] Market basket analysis
-
----
-
-**⭐ If this project is helpful, please star it! [★](javascript:void(0))**
 
 ---
 
