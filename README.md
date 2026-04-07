@@ -8,7 +8,7 @@
 
 ---
 
-## 🎯 Project Overview
+Project Overview
 
 This project delivers a **complete, business-ready BI solution** from raw data to executive insights, demonstrating:
 
@@ -105,11 +105,6 @@ Total 6-Month:  $3,323K (Prophet) / $3,303K (ARIMA)  [Consensus: $3,311K]
 - **CSV**: Raw data format (10,020 rows × 14 columns)
 - **Power BI / Tableau**: Dashboard implementation (design specs provided)
 - **SQL Server / PostgreSQL**: Production data warehouse (scripts included)
-
-### Environment
-- Windows/Mac/Linux compatible
-- Minimal external dependencies (mostly pip packages)
-- No cloud services required for analysis
 
 ---
 
@@ -286,9 +281,4 @@ Business Impact:      $1.2M
 Time to ROI:          6 months
 ```
 
-
----
-
-*Last Updated: March 26, 2026*  
-*Version: 1.0 (Production Ready)*
 
